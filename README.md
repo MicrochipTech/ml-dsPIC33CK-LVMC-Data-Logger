@@ -2,7 +2,7 @@
 # DSPIC33CK LVMC development board Data Logger
 
 ## Repository Overview
-This repository contains firmware for streaming motor Iq and RPM data over UART from DSPIC33CK LVMC development board. 
+This repository contains firmware for streaming motor IQ and RPM data over UART from the DSPIC33CK LVMC development board. 
 
 ## Hardware Used
 
@@ -21,7 +21,7 @@ This repository contains firmware for streaming motor Iq and RPM data over UART 
 * motorBench® Development Suite [Software Plugin Details](https://www.microchip.com/en-us/solutions/technologies/motor-control-and-drive/motorbench-development-suite)
 
 # How to Configure, Compile, and Flash
-The steps below explain the process of configuring the the data logger firmware build, compiling it, and flashing it to the dsPIC33CK device.
+The steps below explain the process of configuring the data logger firmware build, compiling it, and flashing it to the dsPIC33CK device.
 
 1. Plug your  dsPIC33CK Low Voltage Motor Control (LVMC) Development Board into your PC via USB.
 
@@ -86,5 +86,5 @@ The  data should now be available in the time plot. Double-click anywhere within
 | :---------------------------------: |
 |     *Data Visualizer Time Plot*     |
 
-Visit the [Machine Learning Plugin page](https://microchipdeveloper.com/machine-learning:ml-plugin) to learn more about using the Data Visualizer plugin to export your data for machine learning applications.
+Visit the [Machine Learning Plugin page](https://onlinedocs.microchip.com/oxy/GUID-80D4088D-19D0-41E9-BE8D-7AE3BE021BBF-en-US-3/GUID-E6CBB10A-FFC8-4EF3-8C07-D29B64446EB6.html) to learn more about using the Data Visualizer plugin to export your data for machine learning applications.
 
