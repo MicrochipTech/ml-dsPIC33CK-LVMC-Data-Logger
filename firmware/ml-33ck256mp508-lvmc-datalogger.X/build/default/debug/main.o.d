@@ -1,5 +1,5 @@
 build/default/debug/main.o: main.c mcc_generated_files/motorBench/util.h \
- ringbuffer.h app_config.h mcc_generated_files/motorBench/hal.h \
+ ringbuffer.h mcc_generated_files/motorBench/hal.h \
  mcc_generated_files/motorBench/hal/hardware_access_functions.h \
  mcc_generated_files/motorBench/hal/hardware_access_functions_types.h \
  mcc_generated_files/motorBench/hal/hardware_access_functions_params.h \
@@ -32,7 +32,7 @@ build/default/debug/main.o: main.c mcc_generated_files/motorBench/util.h \
  mcc_generated_files/system/system_types.h \
  mcc_generated_files/system/system_types.h \
  mcc_generated_files/system/traps.h mcc_generated_files/system/watchdog.h \
- mcc_generated_files/motorBench/hal/mcaf_pin_manager.h \
+ mcc_generated_files/motorBench/hal/mcaf_pin_manager.h app_config.h \
  mcc_generated_files/motorBench/mcaf_main.h \
  mcc_generated_files/system/system.h \
  mcc_generated_files/motorbench/system_state.h \
@@ -81,14 +81,11 @@ build/default/debug/main.o: main.c mcc_generated_files/motorBench/util.h \
  mcc_generated_files/motorBench/parameters/mcapi_params.h \
  mcc_generated_files/motorBench/board_service.h \
  mcc_generated_files/motorBench/hal.h \
- mcc_generated_files/motorBench/board_service_types.h \
- mcc_generated_files/timer/sccp2.h
+ mcc_generated_files/motorBench/board_service_types.h
 
 mcc_generated_files/motorBench/util.h:
 
 ringbuffer.h:
-
-app_config.h:
 
 mcc_generated_files/motorBench/hal.h:
 
@@ -177,6 +174,8 @@ mcc_generated_files/system/traps.h:
 mcc_generated_files/system/watchdog.h:
 
 mcc_generated_files/motorBench/hal/mcaf_pin_manager.h:
+
+app_config.h:
 
 mcc_generated_files/motorBench/mcaf_main.h:
 
@@ -275,5 +274,3 @@ mcc_generated_files/motorBench/board_service.h:
 mcc_generated_files/motorBench/hal.h:
 
 mcc_generated_files/motorBench/board_service_types.h:
-
-mcc_generated_files/timer/sccp2.h:

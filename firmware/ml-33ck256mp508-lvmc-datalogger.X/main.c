@@ -65,7 +65,7 @@ extern APPLICATION_DATA app;
 
 
 uint16_t rpm=0;
-volatile int8_t flag_read =0;
+
 
 
 
@@ -126,7 +126,7 @@ void Null_Handler() {
 // RPM measurement 
 uint16_t speed_measurement_local(APPLICATION_DATA *appData)
 {
-    rpm = (float)appData->motorVelocityCommand / RPM_CONVERSION_FACTOR;      
+    rpm = (float)(motor.apiData.velocityMeasured) / RPM_CONVERSION_FACTOR;      
     return rpm;
 }
 
@@ -199,12 +199,10 @@ int main ( void )
     {
         
         MCAF_MainLoop();
-              
-        if (flag_read == 1)
-        {
-            Read_iq_value();
-            flag_read = 0;
-        }
+        
+        Read_iq_value();
+           
+       
         
         if (data_sample_buffer_overrun == true) {
             printf("\n\n\nOverrun!\n\n\n");

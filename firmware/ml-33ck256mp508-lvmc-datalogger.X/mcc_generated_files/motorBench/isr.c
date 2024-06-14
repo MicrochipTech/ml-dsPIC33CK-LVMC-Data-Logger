@@ -79,7 +79,6 @@ extern MCAF_SYSTEM_DATA systemData;
 /** watchdog state, accessed directly */
 extern volatile MCAF_WATCHDOG_T watchdog;
 
-extern volatile int8_t flag_read;
 
 /**
  * Executes tasks in the ISR for ADC interrupts.
@@ -125,7 +124,7 @@ void __attribute__((interrupt, auto_psv)) HAL_ADC_ISR(void)
         MCAPI_AdcIsrEpilog();
     }
     
-    flag_read  =1;
+ 
 }
 
 #if MCAF_SINGLE_CHANNEL_SUPPORT   
